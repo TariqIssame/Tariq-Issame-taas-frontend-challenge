@@ -1,0 +1,233 @@
+.search-filiere{
+  display: block;
+  width: 80%;
+  padding: 25px 0px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 35px rgb(0 0 0 / 12%);
+  margin-bottom: 70px;
+}
+@media (max-width : 1400px){
+  .search-filiere{
+    width: 90%;
+  }
+}
+@media (max-width : 1201px){
+  .search-filiere{
+    width: 100%;
+  }
+  .globalContentCombobox{
+    max-width: 37% !important;
+  }
+}
+
+@media (max-width : 992px){
+  .globalContentCombobox{
+    max-width: 33% !important;
+  }
+}
+
+@media (max-width : 283px) {
+  .filtration-responsive a {
+    font-size: 1rem !important;
+  }
+}
+
+/* focus items */
+.focusItemCombobox{
+  color: #E73A4F !important;
+  background: #e73a4f14 !important;
+}
+/*********/
+.globalContentCombobox svg {
+  display: block;
+}
+.filtration-responsive, .header-filtre{
+  display: none;
+}
+.globalContentCombobox{
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 2.4rem;
+  max-width: 100%;
+  cursor: pointer;
+  color: #3B3D54;
+  border-radius: .4rem;
+}
+.globalContentCombobox::after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: -5.2rem;
+  min-width: 32.8rem;
+  height: 5.2rem;
+  cursor: default;
+  transition: background-color 200ms, color 200ms;
+  visibility: hidden;
+}
+.globalContentCombobox:hover:after{
+  visibility: visible;
+}
+.globalContentCombobox .optionSelected{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 16rem;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  text-align: left;
+}
+.globalContentCombobox .icone-arrow {
+  flex-shrink: 0;
+  margin-left: 2rem;
+  transition: transform 150ms;
+}
+.globalContentCombobox:hover .icone-arrow{
+  transform: rotate(180deg);
+  transition: transform 150ms;
+}
+.globalContentCombobox:hover .contentListCombobox{
+  transform: translateY(-1rem) scale(0.98);
+  visibility: visible;
+}
+.contentListCombobox {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  top: 5.5rem;
+  left: 0;
+  min-width: 22.8rem;
+  padding: 1.6rem 1.6rem;
+  border-radius: .4rem;
+  background-color: #fff;
+  visibility: hidden;
+  box-shadow: 0 0.8rem 1.6rem rgb(8 80 111 / 4%), 0 0.4rem 2.4rem rgb(8 80 111 / 4%);
+  cursor: default;
+  transition-property: visibility, opacity, transform;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+  text-align: left !important;
+}
+.itemCombobox{
+  padding: 6px 0px 6px 13px;
+  font-size: 1.05rem;
+  color: #3B3D54;
+  cursor: pointer;
+}
+.itemCombobox:hover {
+  color: #fff;
+  background: #3B3D54;
+  border-radius: 3px;
+}
+.contentDleteFiltre {
+  white-space: nowrap;
+  text-align: center;
+}
+.contentDleteFiltre button{
+  font-weight: 600;
+  color: #E73A4F;
+  background: none;
+  border : none;
+}
+.contentDleteFiltre button:hover{
+  color: #3B3D54;
+}
+.contentDleteFiltre button:focus{
+  outline: none;
+}
+.contentDleteFiltre .deleteFiltre i{
+  margin-right: 7px;
+}
+
+/* formation card */
+.CardFormation {
+  padding-bottom: 50px;
+}
+.CardFormation .card {
+  opacity: 1;
+  transition: 1s opacity ease-in;
+}
+.CardFormation .card{
+  border: none;
+  box-shadow: 0px 0px 40px #0000001a;
+  cursor: pointer;
+  transition: 0.25s ease-in;
+  border-radius: 15px;
+}
+
+.CardFormation .card img{
+  border-radius: 15px;
+}
+
+.CardFormation .card .card-title {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #E73A4F;
+}
+.CardFormation h5 {
+  font-size: 1.2rem !important;
+  color: #3B3D54 !important;
+}
+@media (max-width: 1200px){
+  .CardFormation .col-lg-4{
+      width: 50%;
+  }
+}
+
+@media (max-width: 768px){
+  .CardFormation .col-md-6{
+      width: 100% !important;
+  }
+}
+.CardFormation .card p{
+  display: block;
+  display: -webkit-box;
+  height: 66px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.4;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  color: #3B3D54 !important;
+}
+.CardFormation .card:hover{
+  transition: 0.25s ease-out;
+  transform: translateY(-9%);
+  box-shadow: 0px 0px 40px #00000033;
+}
+.CardFormation  a {
+  text-decoration: none;
+}
+.mrg-add {
+  padding-bottom: 4rem;
+}
+.mrg-r-add {
+  padding-right: 15px;
+}
+.mrg-px-add {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+.mrg-l-add {
+  padding-left: 15px;
+}
+
+/* title formation */
+
+.CardFormation h2 {
+  font-weight: bold;
+  color: #3B3D54;
+  display: none;
+  margin-left: 0;
+}
+
+@media (max-width : 992px) {
+  .CardFormation h2 {
+    margin-left: 8px;
+  }
+}
